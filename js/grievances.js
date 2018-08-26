@@ -12,6 +12,7 @@ const grievance_images = [
     'path,'
 ];
 
+
 // Shuffle using Fisher-Yates algorithm
 function shuffleGrievances() {
     for (let i = grievances.length - 1; i > 0; i--) {
@@ -28,8 +29,28 @@ function displayGrievances() {
     });
 }
 
-function addGrievance(grievance, img) {
-    grievances.unshift(grieviance);
-    img = img || 'default-path';
+function addGrievance(title, grievance, img) {
+    grievances.unshift(grievance);
+    img = img || findImage(title);
     grievance_images.unshift(img);
 }
+
+function findImage(title) {
+    google.load('search', '1');
+    google.setOnLoadCallback(OnLoad());
+    let search;
+
+    function OnLoad() {
+        search = new google.search.ImageSearch();
+        search.setSearchCompleteCallBack(this, searchComplete, null);
+        search.execute(title);
+    }
+
+    function searchComplete() {
+        if (search.results && search.results.length > 0) {
+            console.log(search.results[Math.floor(Math.random() * 20)]['url'])
+            //document.body.style.backgroundImage = "url('" + search.results[rnd]['url'] + "')";
+        }
+    }
+}
+
