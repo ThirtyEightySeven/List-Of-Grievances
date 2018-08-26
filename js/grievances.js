@@ -36,21 +36,15 @@ function addGrievance(title, grievance, img) {
 }
 
 function findImage(title) {
-    google.load('search', '1');
-    google.setOnLoadCallback(OnLoad());
-    let search;
-
-    function OnLoad() {
-        search = new google.search.ImageSearch();
-        search.setSearchCompleteCallBack(this, searchComplete, null);
-        search.execute(title);
-    }
-
-    function searchComplete() {
-        if (search.results && search.results.length > 0) {
-            console.log(search.results[Math.floor(Math.random() * 20)]['url'])
-            //document.body.style.backgroundImage = "url('" + search.results[rnd]['url'] + "')";
-        }
-    }
+    console.log(title);
+    $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?', {
+            tags: title,
+            tagmode: 'any',
+            format: 'json'
+        },
+        function (data) {
+            console.log(data);
+            let image_src = data.items[Math.floor(Math.random() * data.items.length)]['media']['m'].replace("_m", "_b");
+            console.log(image_src);
+        });
 }
-
