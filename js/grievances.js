@@ -31,20 +31,22 @@ function displayGrievances() {
 
 function addGrievance(title, grievance, img) {
     grievances.unshift(grievance);
-    img = img || findImage(title);
-    grievance_images.unshift(img);
+    if (!img) {
+        findImage(title);
+    }
 }
 
 function findImage(title) {
-    console.log(title);
     $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?', {
             tags: title,
             tagmode: 'any',
             format: 'json'
         },
         function (data) {
-            console.log(data);
-            let image_src = data.items[Math.floor(Math.random() * data.items.length)]['media']['m'].replace("_m", "_b");
-            console.log(image_src);
+            addImage(data.items[Math.floor(Math.random() * data.items.length)]['media']['m'].replace("_m", "_b"));
         });
 }
+
+function addImage(img) {
+    grievance_images.unshift(img);
+} 
