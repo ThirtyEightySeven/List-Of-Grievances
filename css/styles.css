@@ -33,19 +33,21 @@
 }
 
 #add-pane{
-	background-color: white;
+		background-color: white;
+		text-align: center;
+	position: relative;
+	left:20%;
 }
 
 .form-box{
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 40%;
+	margin: 0 10%;
 
-	width: 400px;
-	margin: 50px auto;
-	text-align: center;
-	position: relative;
 
-	
-	border: 1px solid #4CAF50;
-	background-color: gray;
-	margin:15%;
-	height:40%;
 }
