@@ -1,1 +1,25 @@
 @charset "utf-8";
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  color: green;
+  opacity: 1;
+  background-color: #84b4b1;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-logo {
+  width: 50px;
+  font-size: 25px;
+
+  margin-top: 0;
+  margin-left: 15px;
+  line-height: 1;
+}
+.nav-border {
+  text-decoration: underline;
+}
