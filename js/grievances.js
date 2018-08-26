@@ -1,5 +1,5 @@
 const grievances = [
-  
+
 ];
 
 // Shuffle using Fisher-Yates algorithm
@@ -13,6 +13,6 @@ function shuffleGrievances() {
 function displayGrievances() {
     shuffleGrievances();
     grievances.forEach(function (grievance) {
-        console.log(grievance);
+        document.write('<li>' + grievance + '</li>')
     });
 }
