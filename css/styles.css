@@ -23,3 +23,12 @@
 .nav-border {
   text-decoration: underline;
 }
+
+
+.content-pane{
+height: 100vh;
+position: absolute;
+background-color:green;
+color:blue;
+
+}
