@@ -1,0 +1,7 @@
+const grievances = [
+
+]
+
+function displayGrievances() {
+
+}
