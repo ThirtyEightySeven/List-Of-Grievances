@@ -7,7 +7,7 @@ const grievances = [
 
 const grievance_images = [
     'path',
-    'path',
+    'http://www.rit.edu/news/lib/filelib/200708/new_students.jpg',
     'path',
     'path,'
 ];
@@ -54,5 +54,7 @@ function addImage(img) {
 $(document).ready(function () {
     $("#submitButton").click(function () {
         addGrievance($('#formTitle').val(), $('#formDesc').val());
+        $('#formTitle').val('');
+        $('#formDesc').val('');
     });
 });
