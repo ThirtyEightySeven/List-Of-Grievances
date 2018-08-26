@@ -31,3 +31,21 @@
   background-color:green;
   color:blue;
 }
+
+#add-pane{
+	background-color: white;
+}
+
+.form-box{
+
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+
+	
+	border: 1px solid #4CAF50;
+	background-color: gray;
+	margin:15%;
+	height:40%;
+}
