@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 .navbar {
-  position: fixed;
-  top: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   overflow: hidden;
   z-index: 10;
@@ -27,7 +28,6 @@
 
 .content-pane{
 height: 100vh;
-position: absolute;
 background-color:green;
 color:blue;
 
