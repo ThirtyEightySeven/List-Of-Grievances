@@ -12,6 +12,7 @@ const grievance_images = [
     'path,'
 ];
 
+
 // Shuffle using Fisher-Yates algorithm
 function shuffleGrievances() {
     for (let i = grievances.length - 1; i > 0; i--) {
@@ -28,8 +29,22 @@ function displayGrievances() {
     });
 }
 
-function addGrievance(grievance, img) {
-    grievances.unshift(grieviance);
-    img = img || 'default-path';
+function addGrievance(title, grievance, img) {
+    grievances.unshift(grievance);
+    img = img || findImage(title);
     grievance_images.unshift(img);
+}
+
+function findImage(title) {
+    console.log(title);
+    $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?', {
+            tags: title,
+            tagmode: 'any',
+            format: 'json'
+        },
+        function (data) {
+            console.log(data);
+            let image_src = data.items[Math.floor(Math.random() * data.items.length)]['media']['m'].replace("_m", "_b");
+            console.log(image_src);
+        });
 }
