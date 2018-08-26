@@ -49,4 +49,8 @@ function findImage(title) {
 
 function addImage(img) {
     grievance_images.unshift(img);
-} 
+}
+
+$('button[name=next]').click(function() {
+    alert('test');
+});
