@@ -3,15 +3,14 @@ const grievances = [
     'Orientation lines start an hour before event starts.',
     'The Quarter Mile isn\'t well lit at night.',
     'Tech Crew blasts music at night around dorms.',
-
 ];
 
 const grievance_images = [
-    'url',
-    'url',
-    'url',
-    'url,'
-]
+    'path',
+    'path',
+    'path',
+    'path,'
+];
 
 // Shuffle using Fisher-Yates algorithm
 function shuffleGrievances() {
@@ -29,3 +28,8 @@ function displayGrievances() {
     });
 }
 
+function addGrievance(grievance, img) {
+    grievances.unshift(grieviance);
+    img = img || 'default-path';
+    grievance_images.unshift(img);
+}
