@@ -54,7 +54,8 @@ body {
 	box-sizing: border-box;
 	width: 40%;
 	margin: 0 10%;
-
+	padding-left:10%;
+	padding-right:10%;
 
 }
 
@@ -71,9 +72,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.form-control{
-	margin:20px;
-}
+
 
 .submit-button{
 	width: 100px;
