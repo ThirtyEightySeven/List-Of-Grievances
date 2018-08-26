@@ -37,7 +37,7 @@ body {
   color:blue;
 }
 
-#add-pane{
+#form-wrapper{
 	background-color: white;
 	text-align: center;
 	position: relative;
@@ -70,3 +70,20 @@ body {
 	color: #666;
 	margin-bottom: 20px;
 }
+
+.form-control{
+	margin:20px;
+}
+
+.submit-button{
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+
