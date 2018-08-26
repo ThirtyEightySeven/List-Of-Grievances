@@ -13,6 +13,6 @@ function shuffleGrievances() {
 function displayGrievances() {
     shuffleGrievances();
     grievances.forEach(function (grievance) {
-        document.write('<li>' + grievance + '</li>')
+        document.write('<li class="list-group-item">' + grievance + '</li>')
     });
 }
