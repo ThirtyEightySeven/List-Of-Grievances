@@ -51,6 +51,8 @@ function addImage(img) {
     grievance_images.unshift(img);
 }
 
-$('button[name=next]').click(function() {
-    alert('test');
+$(document).ready(function () {
+    $("#submitButton").click(function () {
+        addGrievance($('#formTitle').val(), $('#formDesc').val());
+    });
 });
