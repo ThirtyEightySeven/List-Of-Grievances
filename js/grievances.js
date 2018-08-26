@@ -1,13 +1,16 @@
 const grievances = [
-    'test 1',
-    'test 2',
-    'test 3',
+    'Midnight Oil closes at 5pm on weekdays.',
+    'Orientation lines start an hour before event starts.',
+    'The Quarter Mile isn\'t well lit at night.',
+    'Tech Crew blasts music at night around dorms.',
+
 ];
 
 const grievance_images = [
-    'url 1',
-    'url 2',
-    'url 3',
+    'url',
+    'url',
+    'url',
+    'url,'
 ]
 
 // Shuffle using Fisher-Yates algorithm
