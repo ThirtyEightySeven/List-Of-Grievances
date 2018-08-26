@@ -27,8 +27,7 @@
 
 
 .content-pane{
-height: 100vh;
-background-color:green;
-color:blue;
-
+  height: 100vh;
+  background-color:green;
+  color:blue;
 }
