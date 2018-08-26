@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+body {
+	font-family: montserrat, arial, verdana;
+}
+
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -33,10 +38,11 @@
 }
 
 #add-pane{
-		background-color: white;
-		text-align: center;
+	background-color: white;
+	text-align: center;
 	position: relative;
 	left:20%;
+	margin: 50px auto;
 }
 
 .form-box{
@@ -50,4 +56,17 @@
 	margin: 0 10%;
 
 
+}
+
+.f-title {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.f-subtitle {
+	font-weight: normal;
+	font-size: 20px;
+	color: #666;
+	margin-bottom: 20px;
 }
