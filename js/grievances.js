@@ -23,9 +23,10 @@ function shuffleGrievances() {
 }
 
 function displayGrievances() {
+    console.log('hi');
     shuffleGrievances();
     grievances.forEach(function (grievance) {
-        document.write('<div class="container-fluid content-pane">' + grievance + '</div>')
+        $('#containers').prepend('<div class="container-fluid content-pane">' + grievance + '</div>');
     });
 }
 
@@ -49,12 +50,21 @@ function findImage(title) {
 
 function addImage(img) {
     grievance_images.unshift(img);
+    
 }
 
 $(document).ready(function () {
-    $("#submitButton").click(function () {
+    displayGrievances();
+    $('#submitButton').click(function () {
         addGrievance($('#formTitle').val(), $('#formDesc').val());
         $('#formTitle').val('');
         $('#formDesc').val('');
+        createContainer();
     });
 });
+
+function createContainer() {
+   console.log('background-image: url("' + grievance_images[0] + '")')
+   $('#containers').prepend('<div class="container-fluid content-pane">' + grievances[0] + '</div>').css('background-image: url("' + grievance_images[0] + '")');
+
+}
