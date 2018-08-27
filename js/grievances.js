@@ -14,6 +14,7 @@ const grievance_images = [
     'http://www.b-metro.co.zw/wp-content/uploads/2018/08/loud-music.jpg',
     'https://igx.4sqi.net/img/general/699x268/11977479_bNWnzBZppBoEj_bz0sbVQYE1_QJgmCvFY8ISKGBqmlQ.jpg',
     'https://www.rit.edu/fa/diningservices/sites/rit.edu.fa.diningservices/files/styles/juicebox_large/public/Gracies_7965.jpg?itok=CntFkdxe',
+    filter: blur 10px;
 ];
 
 
