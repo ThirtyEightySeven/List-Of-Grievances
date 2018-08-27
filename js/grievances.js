@@ -29,7 +29,7 @@ function shuffleGrievances() {
 function displayGrievances() {
     shuffleGrievances();
     for (let i = 0; i < grievances.length; i++) {
-        $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="' + 'background-image: url(' + grievance_images[i] + ');">' + grievances[i] + '</div>')
+        $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="' + 'background-image: url(' + grievance_images[i] + ');"> <p>' + grievances[i] + '</p></div>')
     }
 
 }
@@ -65,5 +65,5 @@ $(document).ready(function () {
 });
 
 function createContainer() {
-   $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="' + 'background-image: url(' + grievance_images[0] + ');">' + grievances[0] + '</div>')
+   $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="' + 'background-image: url(' + grievance_images[0] + ');"><p>' + grievances[i] + '</p></div>')
 }
