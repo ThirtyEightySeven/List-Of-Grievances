@@ -8,12 +8,12 @@ const grievances = [
 ];
 
 const grievance_images = [
-    'path',
+    'null',
     'http://www.rit.edu/news/lib/filelib/200708/new_students.jpg',
-    'path',
-    'path',
-    'path',
-    'path',
+    'null',
+    'null',
+    'null',
+    'null',
 ];
 
 
@@ -29,7 +29,7 @@ function shuffleGrievances() {
 function displayGrievances() {
     shuffleGrievances();
     grievances.forEach(function (grievance) {
-        $('#containers').prepend('<div class="container-fluid content-pane container">' + grievance + '</div>');
+        $('#containers').prepend('<div class="container-fluid content-pane grievance-container">' + grievance + '</div>');
     });
 }
 
@@ -64,5 +64,5 @@ $(document).ready(function () {
 });
 
 function createContainer() {
-   $('#containers').prepend('<div class="container-fluid content-pane container" style="' + 'background-image: url(' + grievance_images[0] + '); background-repeat: no-repeat; background-size: cover;">' + grievances[0] + '</div>')
+   $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="' + 'background-image: url(' + grievance_images[0] + ');">' + grievances[0] + '</div>')
 }
