@@ -24,8 +24,6 @@ const grievances = [{
     },
 ];
 
-console.log(grievances[0]);
-
 // Shuffle using Fisher-Yates algorithm
 function shuffleGrievances() {
     for (let i = grievances.length - 1; i > 0; i--) {
@@ -44,7 +42,7 @@ function displayGrievances() {
 function addGrievance(title, grievance, img, isNew) {
     grievances.unshift({
         description: grievance,
-        image: null
+        image: img || null
     });
     if (!img) findImage(title, isNew);
 }
