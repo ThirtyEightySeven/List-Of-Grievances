@@ -65,6 +65,6 @@ $(document).ready(function () {
 
 function createContainer() {
    console.log('background-image: url("' + grievance_images[0] + '")')
-   $('#containers').prepend('<div class="container-fluid content-pane">' + grievances[0] + '</div>').css('background-image: url("' + grievance_images[0] + '")');
+   $('#containers').prepend('<div class="container-fluid content-pane" style="background-color:blue;">' + grievances[0]  + '</div>');
 
 }
