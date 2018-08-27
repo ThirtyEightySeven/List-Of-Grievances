@@ -86,15 +86,16 @@ body {
 	background-repeat: no-repeat;
 	width: 100%;
   min-height: 100%;
-<<<<<<< HEAD
  	background-size: cover;
-  filter: blur(5px);
-}
-
-=======
   background-size: cover;
   text-align: center;
   vertical-align: middle;
   line-height: 943px; 
+  -webkit-filter: blur(5px); /* Safari */
+  filter: blur(5px);
 }
->>>>>>> 0540a910484666bd082303ddf57929cee7a97017
+
+.grievance-container p {
+  -webkit-filter: blur(0px); /* Safari */
+  filter: blur(0px);
+}
