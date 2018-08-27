@@ -28,9 +28,10 @@ function shuffleGrievances() {
 
 function displayGrievances() {
     shuffleGrievances();
-    grievances.forEach(function (grievance) {
-        $('#containers').prepend('<div class="container-fluid content-pane grievance-container">' + grievance + '</div>');
-    });
+    for (let i = 0; i < grievances.length; i++) {
+        $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="' + 'background-image: url(' + grievance_images[i] + ');">' + grievances[i] + '</div>')
+    }
+
 }
 
 function addGrievance(title, grievance, img, isNew) {
