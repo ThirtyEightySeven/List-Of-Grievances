@@ -31,7 +31,6 @@ function displayGrievances() {
     for (let i = 0; i < grievances.length; i++) {
         $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="' + 'background-image: url(' + grievance_images[i] + ');"> <p>' + grievances[i] + '</p></div>')
     }
-
 }
 
 function addGrievance(title, grievance, img, isNew) {
