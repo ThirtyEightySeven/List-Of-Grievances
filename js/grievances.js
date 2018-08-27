@@ -65,5 +65,5 @@ $(document).ready(function () {
 });
 
 function createContainer() {
-   $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="' + 'background-image: url(' + grievance_images[0] + ');"><p>' + grievances[i] + '</p></div>')
+   $('#containers').prepend('<div class="container-fluid content-pane grievance-container title-text" style="' + 'background-image: url(' + grievance_images[0] + ');"><p>' + grievances[i] + '</p></div>')
 }
