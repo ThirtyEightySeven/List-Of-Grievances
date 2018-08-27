@@ -1,5 +1,5 @@
 const grievances = [{
-        description: 'Midnight Oil closes at 5pm on weekdays.',
+        description: 'Midnight Oil closes at 5pm in the summer.',
         image: 'https://www.rit.edu/fa/diningservices/sites/rit.edu.fa.diningservices/files/styles/juicebox_large/public/Midnight_0620.jpg?itok=rmsF2S4p'
     },
     {
