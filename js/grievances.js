@@ -4,15 +4,15 @@ const grievances = [{
      },
     {
         description: 'Orientation lines start an hour before event starts.',
-        image: 'http://www.rit.edu/news/lib/filelib/200708/new_students.jpg'
+        image: 'https://www.rit.edu/news/lib/filelib/200708/new_students.jpg'
     },
     {
         description: 'The Quarter Mile isn\'t well lit at night.',
-        image: 'http://www.ntid.rit.edu/cmmsdb/sites/www.ntid.rit.edu.cmmsdb/files/photos/big-shot_rit0024_900.jpg'
+        image: 'https://www.ntid.rit.edu/cmmsdb/sites/www.ntid.rit.edu.cmmsdb/files/photos/big-shot_rit0024_900.jpg'
     },
     {
         description: 'Tech Crew blasts music at night around dorms.',
-        image: 'http://www.b-metro.co.zw/wp-content/uploads/2018/08/loud-music.jpg'
+        image: 'https://www.b-metro.co.zw/wp-content/uploads/2018/08/loud-music.jpg'
     },
     {
         description: 'Half of Gracies is always blocked off due to spills.',
