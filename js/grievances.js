@@ -48,7 +48,7 @@ function addGrievance(title, grievance, img, isNew) {
 }
 
 function findImage(title, isNew) {
-    $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?', {
+    $.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?', {
             tags: title,
             tagmode: 'any',
             format: 'json'
