@@ -1,7 +1,7 @@
 const grievances = [{
         description: 'Midnight Oil closes at 5pm in the summer.',
         image: 'https://www.rit.edu/fa/diningservices/sites/rit.edu.fa.diningservices/files/styles/juicebox_large/public/Midnight_0620.jpg?itok=rmsF2S4p'
-    },
+     },
     {
         description: 'Orientation lines start an hour before event starts.',
         image: 'http://www.rit.edu/news/lib/filelib/200708/new_students.jpg'
@@ -35,7 +35,7 @@ function shuffleGrievances() {
 function displayGrievances() {
     shuffleGrievances();
     for (let i = 0; i < grievances.length; i++) {
-        $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="background-image: url(' + grievances[i].image + ');"> <p>' + grievances[i].description + '</p></div>');
+        $('#containers').prepend('<div class="content-pane-wrapper"><div class="container-fluid content-pane content-pane-grievance " style="background-image: url(' + grievances[i].image + ');"></div> <div class="text-wrapper"><p class="text-title  ">' + grievances[i].description + '</p></div></div>');
     }
 }
 
@@ -73,5 +73,5 @@ $(document).ready(function () {
 });
 
 function createContainer() {
-    $('#containers').prepend('<div class="container-fluid content-pane grievance-container" style="background-image: url(' + grievances[0].image + ');"><p>' + grievances[0].description + '</p></div>');
+    $('#containers').prepend('<div class="content-pane-wrapper"><div class="container-fluid content-pane content-pane-grievance " style="background-image: url(' + grievances[0].image + ');"></div> <div class="text-wrapper"><p class="text-title  ">' + grievances[0].description + '</p></div></div>');
 }
