@@ -12,7 +12,7 @@ const grievances = [{
     },
     {
         description: 'Tech Crew blasts music at night around dorms.',
-        image: 'https://www.b-metro.co.zw/wp-content/uploads/2018/08/loud-music.jpg'
+        image: 'https://www.newtimes.co.rw/sites/default/files/styles/mystyle/public/main/articles/2018/04/02/1_6_2.jpg?itok=iIi5Mk1f'
     },
     {
         description: 'Half of Gracies is always blocked off due to spills.',
@@ -35,7 +35,7 @@ function shuffleGrievances() {
 function displayGrievances() {
     shuffleGrievances();
     for (let i = 0; i < grievances.length; i++) {
-        $('#containers').prepend('<div class="content-pane-wrapper"><div class="container-fluid content-pane content-pane-grievance " style="background-image: url(' + grievances[i].image + ');"></div> <div class="text-wrapper"><p class="text-title  ">' + grievances[i].description + '</p></div></div>');
+        $('#containers').prepend('<div class="content-pane-wrapper"><div class="container-fluid content-pane content-pane-grievance" style="background-image: url(' + grievances[i].image + ');"></div> <div class="text-wrapper"><p class="text-title  ">' + grievances[i].description + '</p></div></div>');
     }
 }
 
@@ -73,5 +73,5 @@ $(document).ready(function () {
 });
 
 function createContainer() {
-    $('#containers').prepend('<div class="content-pane-wrapper"><div class="container-fluid content-pane content-pane-grievance " style="background-image: url(' + grievances[0].image + ');"></div> <div class="text-wrapper"><p class="text-title  ">' + grievances[0].description + '</p></div></div>');
+    $('#containers').prepend('<div class="content-pane-wrapper"><div class="container-fluid content-pane content-pane-grievance" style="background-image: url(' + grievances[0].image + ');"></div> <div class="text-wrapper"><p class="text-title  ">' + grievances[0].description + '</p></div></div>');
 }
