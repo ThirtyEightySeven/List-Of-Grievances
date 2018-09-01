@@ -1,28 +1,4 @@
-const grievances = [{
-        description: 'Midnight Oil closes at 5pm in the summer.',
-        image: 'https://www.rit.edu/fa/diningservices/sites/rit.edu.fa.diningservices/files/styles/juicebox_large/public/Midnight_0620.jpg?itok=rmsF2S4p'
-     },
-    {
-        description: 'Orientation lines start an hour before event starts.',
-        image: 'https://www.rit.edu/news/lib/filelib/200708/new_students.jpg'
-    },
-    {
-        description: 'The Quarter Mile isn\'t well lit at night.',
-        image: 'https://www.ntid.rit.edu/cmmsdb/sites/www.ntid.rit.edu.cmmsdb/files/photos/big-shot_rit0024_900.jpg'
-    },
-    {
-        description: 'Tech Crew blasts music at night around dorms.',
-        image: 'https://www.newtimes.co.rw/sites/default/files/styles/mystyle/public/main/articles/2018/04/02/1_6_2.jpg?itok=iIi5Mk1f'
-    },
-    {
-        description: 'Half of Gracies is always blocked off due to spills.',
-        image: 'https://igx.4sqi.net/img/general/699x268/11977479_bNWnzBZppBoEj_bz0sbVQYE1_QJgmCvFY8ISKGBqmlQ.jpg'
-    },
-    {
-        description: 'Gracies lacks silverware and cups during rushes.',
-        image: 'https://www.rit.edu/fa/diningservices/sites/rit.edu.fa.diningservices/files/styles/juicebox_large/public/Gracies_7965.jpg?itok=CntFkdxe'
-    },
-];
+let grievances;
 
 // Shuffle using Fisher-Yates algorithm
 function shuffleGrievances() {
@@ -64,7 +40,13 @@ function addImage(img) {
 }
 
 $(document).ready(function () {
-    displayGrievances();
+    $.ajax({
+        url: 'https://thirtyeightyseven.firebaseio.com/grievances.json',
+        success: function (result) {
+            grievances = result;
+            displayGrievances();
+        }
+    });
     $('#submitButton').click(function () {
         addGrievance($('#formTitle').val(), $('#formDesc').val(), null, true);
         $('#formTitle').val('');
