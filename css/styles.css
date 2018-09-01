@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(https: //fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
 
 body {
   font-family: montserrat, arial, verdana;
@@ -32,21 +32,12 @@ body {
   background-color: #94ecc5;
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-<<<<<<< HEAD
 /*ul li:hover{
   background: #53e0a2;
   line-height: 1;
   transition: .25s;
 
 }*/
-=======
-
-ul li:hover {
-  background: #53e0a2;
-  line-height: 1;
-  transition: .25s;
-}
->>>>>>> 86b8fcc2adb6ca273e0f03d2aaf88e9389e90dfc
 
 .nav-logo {
   width: 50px;
@@ -112,7 +103,6 @@ img {
   vertical-align: middle;
 }
 
-<<<<<<< HEAD
 
 .btn {
   background-color: white;
@@ -125,10 +115,6 @@ img {
 
 .btn--block {
   display: block;
-=======
-/* CONTENT PANES OF GRIVENCES */
-.content-pane-wrapper {
->>>>>>> 86b8fcc2adb6ca273e0f03d2aaf88e9389e90dfc
   width: 100%;
 }
 
