@@ -1,12 +1,11 @@
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+@import url(https: //fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
 
 body {
   font-family: montserrat, arial, verdana;
 }
 
 /* NAVBAR */
-
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -19,11 +18,11 @@ body {
   background-color: #94ecc5;
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-ul li:hover{
+
+ul li:hover {
   background: #53e0a2;
   line-height: 1;
   transition: .25s;
-
 }
 
 .nav-logo {
@@ -38,10 +37,7 @@ ul li:hover{
   text-decoration: underline;
 }
 
-
-
 /* CONTENT PANE */
-
 .content-pane {
   height: 100vh;
   background-color: green;
@@ -49,13 +45,11 @@ ul li:hover{
 }
 
 /* CONTENT PANE FORM */
-
 #form-wrapper {
   background-color: white;
   text-align: center;
   margin: 100px auto;
 }
-
 
 .form-box {
   background: white;
@@ -64,12 +58,11 @@ ul li:hover{
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   padding: 20px 30px;
   box-sizing: border-box;
-  width: 40%;
+  width: 30%;
   margin: 0 10%;
   padding-left: 10%;
   padding-right: 10%;
 }
-
 
 .f-title {
   font-size: 25px;
@@ -98,7 +91,6 @@ ul li:hover{
 }
 
 /* CONTENT PANES OF GRIVENCES */
-
 .content-pane-wrapper {
   width: 100%;
   min-height: 100%;
