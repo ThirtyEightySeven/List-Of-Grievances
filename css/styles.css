@@ -14,6 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
 */
+
 }
 
 /* NAVBAR */
@@ -105,33 +106,9 @@ img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
+  filter: contrast(70%);
 }
 
-.btn {
-  background-color: white;
-  border: 1px solid #cccccc;
-  color: #696969;
-  padding: 0.5rem;
-  text-transform: lowercase;
-}
-
-.btn--block {
-  display: block;
-  width: 100%;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.cards__item {
-  display: flex;
-  padding: 1rem;
-}
 
 @media (min-width: 40rem) {
   .cards__item {
@@ -144,6 +121,26 @@ img {
     width: 33.3333%;
   }
 }
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
 
 .card {
   background-color: white;
@@ -152,7 +149,26 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  width:100%;
 }
+
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(30%);
+  overflow: hidden;
+  position: relative;
+  
+
+  min-height: 60%;
+  max-height: 61%;
+  min-width: 100%;
+}
+
 
 .card__content {
   display: flex;
@@ -163,34 +179,9 @@ img {
   min-width: 100%;
 }
 
-.card__image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  filter: contrast(70%);
-  overflow: hidden;
-  position: relative;
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  filter: blur(0px);
-  min-height: 60%;
-  max-height: 61%;
-  min-width: 100%;
-}
-
-.card__image::before {
-  content: "";
-  display: block;
-  padding-top: 56.25%;
-}
 
 
-@media (min-width: 40rem) {
-  .card__image::before {
-    padding-top: 66.6%;
-  }
-}
+
 
 .card__title {
   color: #696969;
@@ -205,4 +196,17 @@ img {
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
 }
