@@ -53,9 +53,9 @@ ul li:hover{
 #form-wrapper {
   background-color: white;
   text-align: center;
-  position: relative;
-  margin: 50px auto;
+  margin: 100px auto;
 }
+
 
 .form-box {
   background: white;
@@ -69,6 +69,7 @@ ul li:hover{
   padding-left: 10%;
   padding-right: 10%;
 }
+
 
 .f-title {
   font-size: 25px;
