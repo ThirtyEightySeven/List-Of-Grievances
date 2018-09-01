@@ -171,6 +171,11 @@ img {
   display: block;
   padding-top: 56.25%;
 }
+
+
+
+
+
 @media (min-width: 40rem) {
   .card__image::before {
     padding-top: 66.6%;
