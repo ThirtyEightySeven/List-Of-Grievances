@@ -12,7 +12,7 @@ function displayGrievances() {
     shuffleGrievances();
     for (let i = 0; i < grievances.length; i++) {
         //$('#containers').prepend('<div class="content-pane-wrapper"><div class="container-fluid content-pane content-pane-grievance" style="background-image: url(' + grievances[i].image + ');"></div> <div class="text-wrapper"><p class="text-title  ">' + grievances[i].description + '</p></div></div>');
-        $('#entry').prepend('<li class="cards__item"><div class="card"><img class="card__image" src="' + grievances[i].image +'"></img><div class="card__content"><p class="card__text">' + grievances[i].description + '</p></div></div></li>');
+        $('#entry').prepend('<li class="cards__item"><div class="card"><img class="card__image" src="' + grievances[i].image +'"></img><div class="card__content"><div class="card__title">Flex</div><p class="card__text">' + grievances[i].description + '</p><button class="btn btn--block card__btn">Button</button></div></div></li>');
     }
 }
 
@@ -56,5 +56,5 @@ $(document).ready(function () {
 });
 
 function createContainer() {
-    $('#containers').prepend('<div class="content-pane-wrapper"><div class="container-fluid content-pane content-pane-grievance" style="background-image: url(' + grievances[0].image + ');"></div> <div class="text-wrapper"><p class="text-title  ">' + grievances[0].description + '</p></div></div>');
+    $('#entry').prepend('<li class="cards__item"><div class="card"><img class="card__image img-fluid" src="' + grievances[i].image +'"></img><div class="card__content"><div class="card__title">Flex</div><p class="card__text">' + grievances[i].description + '</p><button class="btn btn--block card__btn">Button</button></div></div></li>');
 }
