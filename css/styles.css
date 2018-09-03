@@ -127,7 +127,7 @@ img {
 
 /* CARDS */
 .cards {
-  background: white;
+  background: #EFEFEF;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -151,6 +151,7 @@ img {
 }
 
 .card__image {
+  background-color: #EFEFEF;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,7 +166,7 @@ img {
 }
 
 .card__content {
-  background-color: #EFEFEF;
+  background-color: white;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
