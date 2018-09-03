@@ -20,6 +20,10 @@ function addGrievance(title, grievance, img, isNew) {
         title: title,
         description: grievance,
         image: img || null,
+        stats: {
+            upvotes: 0,
+            downvotes: 0
+        }
     });
     if (!img) findImage(title, isNew);
 }
