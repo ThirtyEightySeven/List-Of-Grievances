@@ -49,6 +49,12 @@ body {
   text-decoration: underline;
 }
 
+
+
+
+
+
+
 /* CONTENT PANE */
 .content-pane {
   height: 80vh;
@@ -101,6 +107,10 @@ body {
   margin: 10px 5px;
 }
 
+
+
+
+
 img {
   height: auto;
   max-width: 100%;
@@ -134,6 +144,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .cards__item {
@@ -143,22 +154,21 @@ img {
 }
 
 .card {
-  background-color: #EFEFEF !important;
+  background-color: #fff !important;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  border:0 !important;
+  border-radius: 1.5rem !important;
+  border:0!important;
 
 }
 
 .card__image {
-  background-color: #EFEFEF;
+ 
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
   filter: contrast(45%);
   overflow: hidden;
   position: relative;
@@ -169,19 +179,18 @@ img {
 }
 
 .card__content {
-  background-color: white;
+
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   padding: 1rem;
   position: relative;
   min-width: 100%;
-  border-bottom-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
   border-top: 4px solid #ffa64d;
 }
 
 .card__title {
+
   color: #696969;
   font-size: 1.25rem;
   font-weight: 300;
@@ -190,6 +199,7 @@ img {
 }
 
 .card__text {
+
   flex: 1 1 auto;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -197,6 +207,7 @@ img {
 }
 
 .btn {
+
   background-color: #015249;
   border: 1px solid #cccccc;
   color: white;
@@ -205,6 +216,7 @@ img {
 }
 
 .btn--block {
+  
   display: block;
   width: 100%;
 }
