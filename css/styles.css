@@ -143,11 +143,12 @@ img {
 
 .card {
   background-color: #EFEFEF;
-  background-color: blue;
+  
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
+  border:0 !important;
 }
 
 .card__image {
