@@ -62,3 +62,24 @@ $(document).ready(function () {
 function createContainer() {
     $('#entry').prepend('<li class="cards__item"><div class="card"><img class="card__image" src="' + grievances[0].image + '"></img><div class="card__content"><div class="card__title">' + grievances[0].title + '</div><p class="card__text">' + grievances[0].description + '</p><button class="btn btn--block card__btn">Button</button></div></div></li>');
 }
+
+function auth() {
+
+}
+
+function upvote(id) {
+    grievances[id].stats.upvotes++;
+}
+
+function downvote(id) {
+    grievances[id].stats.downvotes++;
+}
+
+$(window).scroll(function () {
+    var topWindow = $(window).scrollTop();
+    var topWindow = topWindow * 1.5;
+    var windowHeight = $(window).height();
+    var position = topWindow / windowHeight;
+    position = 1 - position;
+    $('.arrow-wrap').css('opacity', position);
+});
