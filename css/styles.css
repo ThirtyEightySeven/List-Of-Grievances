@@ -143,7 +143,6 @@ img {
 
 .card {
   background-color: #EFEFEF;
-  
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -166,7 +165,7 @@ img {
 }
 
 .card__content {
-  background-color: blue;
+  background-color: #EFEFEF;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
