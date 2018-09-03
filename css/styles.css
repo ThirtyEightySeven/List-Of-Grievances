@@ -24,9 +24,9 @@ body {
   width: 100%;
   overflow: hidden;
   z-index: 10;
-  color: white;
+  color: #015249;
   opacity: 1;
-  background-color: #5f4c4c;
+  background-color: white;
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -50,14 +50,13 @@ body {
 
 /* CONTENT PANE */
 .content-pane {
-  height: 100vh;
+  height: 80vh;
   background-color: green;
   color: blue;
 }
 
 /* CONTENT PANE FORM */
 #form-wrapper {
-  background-color: white;
   text-align: center;
   margin: 100px auto;
 }
@@ -128,6 +127,7 @@ img {
 
 /* CARDS */
 .cards {
+  background: white;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -138,12 +138,12 @@ img {
 .cards__item {
   display: flex;
   padding: 1rem;
+
 }
 
 .card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  background-color: #EFEFEF;
+  background-color: blue;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -154,9 +154,9 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  filter: contrast(30%);
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  filter: contrast(45%);
   overflow: hidden;
   position: relative;
   min-height: 60%;
@@ -165,12 +165,15 @@ img {
 }
 
 .card__content {
+  background-color: blue;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   padding: 1rem;
   position: relative;
   min-width: 100%;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 }
 
 .card__title {
@@ -189,9 +192,9 @@ img {
 }
 
 .btn {
-  background-color: white;
+  background-color: #015249;
   border: 1px solid #cccccc;
-  color: #696969;
+  color: white;
   padding: 0.5rem;
   text-transform: lowercase;
 }
@@ -202,7 +205,7 @@ img {
 }
 
 .bg {
-  background: #c21500; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffc500, #c21500); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f7f8f8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #77C9D4, #57BC90); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #77C9D4, #57BC90); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
