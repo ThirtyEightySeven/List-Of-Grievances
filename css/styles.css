@@ -175,6 +175,7 @@ img {
 .card-list {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .cards {
@@ -186,6 +187,7 @@ img {
   text-align: center;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   margin: 20px;
+  padding:0;
 }
 
 .card-bot {

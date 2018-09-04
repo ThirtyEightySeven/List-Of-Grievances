@@ -13,7 +13,8 @@ function displayGrievances() {
     for (let i = 0; i < grievances.length; i++) {
         $('#grid-container').prepend('<li class="cards"><img src="' + grievances[i].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[i].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[i].description + '</p><button class="btn btn--block card__btn">Button</button></div></li>');
     }
-}
+    sizeWindow();
+    }
 
 function addGrievance(title, grievance, img, isNew) {
     grievances.unshift({
@@ -83,3 +84,28 @@ $(window).scroll(function () {
     position = 1 - position;
     $('.arrow-wrap').css('opacity', position);
 });
+
+function sizeWindow() {
+    console.log( "ready!" );
+
+  var size = $( "li" ).length;
+//   var height;
+//   console.log( size);
+
+// var b;
+// var listItems = $("li");
+// listItems.each(function(idx, li) {
+//   var cheight= $(li).height();
+//   console.log( cheight);
+//     // and the rest of your code
+// });
+
+
+//needs to be worked on
+
+
+  height = 450 * size;
+  height = height/4 +500;
+  $('.wrapper').css("height",height);
+}
+//some real logic has gotta be here
