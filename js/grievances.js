@@ -11,7 +11,7 @@ function shuffleGrievances() {
 function displayGrievances() {
     shuffleGrievances();
     for (let i = 0; i < grievances.length; i++) {
-        $('#entry').prepend('<li class="cards"><img src="' + grievances[0].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[0].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[0].description + '</p><button class="btn btn--block card__btn">Button</button></div></li>');
+        $('#grid-container').prepend('<li class="cards"><img src="' + grievances[i].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[i].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[i].description + '</p><button class="btn btn--block card__btn">Button</button></div></li>');
     }
 }
 
