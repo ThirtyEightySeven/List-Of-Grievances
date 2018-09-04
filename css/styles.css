@@ -102,17 +102,14 @@ body {
   margin: 10px 5px;
 }
 
-
-
-
-#card-section{
+#card-section {
   background-color: white;
 }
 
-.wrapper{
+.wrapper {
   height: 1600px;
   max-width: 1160px;
-  width:100%;
+  width: 100%;
   margin: 0px auto;
   background-color: gray;
 }
@@ -128,40 +125,45 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-ul li{
- width: 24.5%;
+
+ul li {
+  width: 24.5%;
 }
-ul li img{
+
+ul li img {
   width: 100%;
 }
 
 /** responsive **/
 @media only screen and (max-width: 960px) {
-  ul li{
-   width: 32.5%;
+  ul li {
+    width: 32.5%;
   }
-  .wrapper{
-  height: 2100px;
+
+  .wrapper {
+    height: 2100px;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  ul li{
-   width: 49.5%;
+  ul li {
+    width: 49.5%;
   }
-  .wrapper{
-  height: 3200px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  ul li{
-   width: 99.5%;
-  }
-  .wrapper{
-  height: auto;
+
+  .wrapper {
+    height: 3200px;
   }
 }
 
+@media only screen and (max-width: 480px) {
+  ul li {
+    width: 99.5%;
+  }
+
+  .wrapper {
+    height: auto;
+  }
+}
 
 img {
   height: auto;
@@ -173,25 +175,24 @@ img {
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .cards {
-
   height: auto;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   background: #f4f4f4;
   text-align: center;
-  margin:20px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: 20px;
 }
 
 .card-bot {
   border-top: 4px solid #f2624a;
   min-height: 100px;
-  padding-bottom:20px;
-  padding-top:20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .card-separator {
