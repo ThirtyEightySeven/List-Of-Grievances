@@ -92,37 +92,31 @@ body {
 
 #card-section {
   background-color: white;
-  height:auto;
+  height: auto;
 }
-
-
 
 .card-columns {
   @include media-breakpoint-only(lg) {
     column-count: 4;
   }
+
   @include media-breakpoint-only(xl) {
     column-count: 5;
   }
 }
 
-
-
-
 .card-wrapper {
   height: auto;
   max-width: 1160px;
   width: 100%;
-  position:relative;
+  position: relative;
   margin: 0px auto;
-  padding-top:40px;
+  padding-top: 40px;
   background-color: gray;
 }
 
-
 .cards {
-
-  width:100%;
+  width: 100%;
   height: auto;
   border-radius: 6px;
   overflow: hidden;
@@ -131,11 +125,11 @@ body {
   text-align: center;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   margin-bottom: 20px;
-  padding:0;
+  padding: 0;
 }
 
 img {
-  width:250px;
+  width: 250px;
   height: auto;
   vertical-align: middle;
   overflow: hidden;
@@ -159,19 +153,10 @@ img {
   padding-right: 30px;
 }
 
-
-
-
-
-
-
 .bg {
-  background: #f7f8f8;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #77C9D4, #57BC90);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #77C9D4, #57BC90);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f7f8f8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #77C9D4, #57BC90); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #77C9D4, #57BC90); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 * {
