@@ -53,8 +53,6 @@ body {
 /* CONTENT PANE */
 .content-pane {
   height: 60vh;
-  background-color: green;
-  color: blue;
 }
 
 /* CONTENT PANE FORM */
@@ -103,9 +101,7 @@ body {
 }
 
 #card-section {
-  background-color: white;
-  height:auto;
-}
+
 
 
 
@@ -118,7 +114,10 @@ body {
   }
 }
 
-
+#card-section {
+  background-color:white;
+  height:auto;
+}
 
 
 .card-wrapper {
@@ -129,6 +128,8 @@ body {
   margin: 0px auto;
   padding-top:40px;
   background-color: gray;
+  padding-top:20vh;
+  padding-bottom:5vh;
 }
 
 
@@ -139,7 +140,13 @@ body {
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-  background: #f4f4f4;
+  color: #307167;
+  background-image:-webkit-gradient(linear,left top,right top,from(#d8eff2),to(#dff0d8));
+ background-image:-webkit-linear-gradient(left,#d8eff2,#dff0d8);
+ background-image:-moz-linear-gradient(left,#d8eff2,#dff0d8);
+ background-image:-ms-linear-gradient(left,#d8eff2,#dff0d8);
+ background-image:-o-linear-gradient(left,#d8eff2,#dff0d8);
+ background-image:linear-gradient(left,#d8eff2,#dff0d8);
   text-align: center;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   margin-bottom: 20px;
@@ -147,7 +154,7 @@ body {
 }
 
 img {
-  width:250px;
+  width:100%;
   height: auto;
   vertical-align: middle;
   overflow: hidden;
