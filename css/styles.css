@@ -88,49 +88,43 @@ body {
   margin: 10px 5px;
 }
 
-<<<<<<< HEAD
 
-=======
 #card-section {
   background-color: white;
   height: auto;
 }
->>>>>>> 2a513e8c094f8ab0f358341a9069a0f0468f04d6
 
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
-  }
 
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
-  }
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
 }
 
-<<<<<<< HEAD
-#card-section {
-  background-color:white;
-  height:auto;
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
 }
 
 
-=======
->>>>>>> 2a513e8c094f8ab0f358341a9069a0f0468f04d6
+
+
 .card-wrapper {
   height: auto;
   max-width: 1160px;
   width: 100%;
   position: relative;
   margin: 0px auto;
-<<<<<<< HEAD
+
 
   
   padding-top:20vh;
   padding-bottom:5vh;
-=======
-  padding-top: 40px;
-  background-color: gray;
->>>>>>> 2a513e8c094f8ab0f358341a9069a0f0468f04d6
 }
 
 .cards {
@@ -153,18 +147,15 @@ body {
 }
 
 img {
-<<<<<<< HEAD
+
   width:100%;
-=======
-  width: 250px;
->>>>>>> 2a513e8c094f8ab0f358341a9069a0f0468f04d6
   height: auto;
   vertical-align: middle;
   overflow: hidden;
 }
 
 .card-bot {
-  border-top: 4px solid #f2624a;
+  border-top: 4px solid #77C9D4;
   min-height: 100px;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -172,7 +163,7 @@ img {
 
 .card-separator {
   width: 40%;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 1px solid #77C9D4;
   margin: 15px auto;
 }
 
@@ -298,4 +289,10 @@ img {
 .arrow-wrap .arrow {
   -webkit-animation: arrows 2.8s 0.4s;
   -webkit-animation-delay: 3s;
+}
+
+
+.card__btn{
+  background-color: #57BC90;
+  color: white;
 }
