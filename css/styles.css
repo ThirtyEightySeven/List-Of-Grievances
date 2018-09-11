@@ -106,79 +106,32 @@ body {
   background-color: white;
 }
 
+
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+
+
+
 .wrapper {
-  height: 1600px;
+  height: auto;
   max-width: 1160px;
   width: 100%;
   margin: 0px auto;
   background-color: gray;
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: flex-start;
-  height: 100%;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-ul li {
-  width: 24.5%;
-}
-
-ul li img {
-  width: 100%;
-}
-
-/** responsive **/
-@media only screen and (max-width: 960px) {
-  ul li {
-    width: 32.5%;
-  }
-
-  .wrapper {
-    height: 2100px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  ul li {
-    width: 49.5%;
-  }
-
-  .wrapper {
-    height: 3200px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  ul li {
-    width: 99.5%;
-  }
-
-  .wrapper {
-    height: auto;
-  }
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  
-}
 
 .cards {
+
+  width:100%;
   height: auto;
   border-radius: 6px;
   overflow: hidden;
@@ -186,8 +139,15 @@ img {
   background: #f4f4f4;
   text-align: center;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  margin: 20px;
+  margin-bottom: 20px;
   padding:0;
+}
+
+img {
+  width:250px;
+  height: auto;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 .card-bot {
@@ -208,83 +168,12 @@ img {
   padding-right: 30px;
 }
 
-/* CARDS */
-/*.cards {
-  background: #EFEFEF;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding-top: 3em;
-}
 
-.cards__item {
-  display: flex;
-  padding: 1rem;
-}
 
-.card {
-  background-color: #fff !important;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 1.5rem !important;
-  border: 0 !important;
-}
 
-.card__image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: contrast(45%);
-  overflow: hidden;
-  position: relative;
-  min-height: 60%;
-  max-height: 61%;
-  min-width: 100%;
-}
 
-.card__content {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  padding: 1rem;
-  position: relative;
-  min-width: 100%;
-  border-top: 4px solid #ffa64d;
-}
 
-.card__title {
-  color: #696969;
-  font-size: 1.25rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
 
-.card__text {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 160% !important;
-  flex: 1 1 auto;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-}
-
-.btn {
-  background-color: #015249;
-  border: 1px solid #cccccc;
-  color: white;
-  padding: 0.5rem;
-  text-transform: lowercase;
-}
-
-.btn--block {
-  display: block;
-  width: 100%;
-}
-*/
 .bg {
   background: #f7f8f8;
   /* fallback for old browsers */

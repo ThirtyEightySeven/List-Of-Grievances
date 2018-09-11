@@ -11,7 +11,7 @@ function shuffleGrievances() {
 function displayGrievances() {
     shuffleGrievances();
     for (let i = 0; i < grievances.length; i++) {
-        $('#grid-container').prepend('<li class="cards"><img src="' + grievances[i].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[i].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[i].description + '</p><button class="btn btn--block card__btn">Button</button></div></li>');
+        $('#entry').prepend('<div class="cards"><img src="' + grievances[i].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[i].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[i].description + '</p><button class="btn btn--block card__btn">Button</button></div></div>');
     }
     sizeWindow();
     }
@@ -61,7 +61,7 @@ $(document).ready(function () {
 });
 
 function createContainer() {
-    $('#entry').prepend('<li class="cards"><img src="' + grievances[0].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[0].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[0].description + '</p><button class="btn btn--block card__btn">Button</button></div></li>');
+    $('#entry').prepend('<div class="cards"><img src="' + grievances[0].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[0].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[0].description + '</p><button class="btn btn--block card__btn">Button</button></div></div>');
 }
 
 function auth() {
@@ -84,27 +84,3 @@ $(window).scroll(function () {
     position = 1 - position;
     $('.arrow-wrap').css('opacity', position);
 });
-
-function sizeWindow() {
-    console.log( "ready!" );
-
-  var size = $( "li" ).length;
-  var height = 0;
-  console.log( size);
-
-var b;
-var listItems = $("li");
-    for (var i = 0 ; i < size; i++){
-  var cheight= parseInt($(listItems[i]).css("height"), 10);
-  height = height+ cheight;
-  console.log( cheight);
-};
-console.log( height);
-
-
-  height = height + size*40;
-  // height = height/4 +500;
-
-  $('.wrapper').css("height",height+2500);
-}
-//some real logic has gotta be here
