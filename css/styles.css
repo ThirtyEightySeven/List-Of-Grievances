@@ -100,7 +100,6 @@ body {
   margin: 10px 5px;
 }
 
-#card-section {
 
 
 
@@ -126,7 +125,8 @@ body {
   width: 100%;
   position:relative;
   margin: 0px auto;
-  padding-top:40px;
+
+  
   padding-top:20vh;
   padding-bottom:5vh;
 }
