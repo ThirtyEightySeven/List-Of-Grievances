@@ -1,19 +1,7 @@
 @charset "utf-8";
-@import url(https: //fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
 
 body {
   font-family: montserrat, arial, verdana;
-  /*  color: #999999;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 1rem;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
-*/
 }
 
 /* NAVBAR */
@@ -100,41 +88,53 @@ body {
   margin: 10px 5px;
 }
 
+<<<<<<< HEAD
 
-
-
+=======
+#card-section {
+  background-color: white;
+  height: auto;
+}
+>>>>>>> 2a513e8c094f8ab0f358341a9069a0f0468f04d6
 
 .card-columns {
   @include media-breakpoint-only(lg) {
     column-count: 4;
   }
+
   @include media-breakpoint-only(xl) {
     column-count: 5;
   }
 }
 
+<<<<<<< HEAD
 #card-section {
   background-color:white;
   height:auto;
 }
 
 
+=======
+>>>>>>> 2a513e8c094f8ab0f358341a9069a0f0468f04d6
 .card-wrapper {
   height: auto;
   max-width: 1160px;
   width: 100%;
-  position:relative;
+  position: relative;
   margin: 0px auto;
+<<<<<<< HEAD
 
   
   padding-top:20vh;
   padding-bottom:5vh;
+=======
+  padding-top: 40px;
+  background-color: gray;
+>>>>>>> 2a513e8c094f8ab0f358341a9069a0f0468f04d6
 }
 
-
 .cards {
-
-  width:100%;
+  width: 100%;
   height: auto;
   border-radius: 6px;
   overflow: hidden;
@@ -149,11 +149,15 @@ body {
   text-align: center;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   margin-bottom: 20px;
-  padding:0;
+  padding: 0;
 }
 
 img {
+<<<<<<< HEAD
   width:100%;
+=======
+  width: 250px;
+>>>>>>> 2a513e8c094f8ab0f358341a9069a0f0468f04d6
   height: auto;
   vertical-align: middle;
   overflow: hidden;
@@ -177,19 +181,10 @@ img {
   padding-right: 30px;
 }
 
-
-
-
-
-
-
 .bg {
-  background: #f7f8f8;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #77C9D4, #57BC90);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #77C9D4, #57BC90);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f7f8f8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #77C9D4, #57BC90); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #77C9D4, #57BC90); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 * {
