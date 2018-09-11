@@ -11,9 +11,10 @@ function shuffleGrievances() {
 function displayGrievances() {
     shuffleGrievances();
     for (let i = 0; i < grievances.length; i++) {
-        $('#entry').prepend('<li class="cards__item"><div class="card"><img class="card__image" src="' + grievances[i].image + '"></img><div class="card__content"><div class="card__title">' + grievances[i].title + '</div><p class="card__text">' + grievances[i].description + '</p><button class="btn btn--block">Button</button></div></div></li>');
+        $('#entry').prepend('<div class="cards"><img src="' + grievances[i].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[i].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[i].description + '</p><button class="btn btn--block card__btn">Button</button></div></div>');
     }
-}
+    sizeWindow();
+    }
 
 function addGrievance(title, grievance, img, isNew) {
     grievances.unshift({
@@ -60,5 +61,26 @@ $(document).ready(function () {
 });
 
 function createContainer() {
-    $('#entry').prepend('<li class="cards__item"><div class="card"><img class="card__image" src="' + grievances[0].image + '"></img><div class="card__content"><div class="card__title">' + grievances[0].title + '</div><p class="card__text">' + grievances[0].description + '</p><button class="btn btn--block card__btn">Button</button></div></div></li>');
+    $('#entry').prepend('<div class="cards"><img src="' + grievances[0].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[0].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[0].description + '</p><button class="btn btn--block card__btn">Button</button></div></div>');
 }
+
+function auth() {
+
+}
+
+function upvote(id) {
+    grievances[id].stats.upvotes++;
+}
+
+function downvote(id) {
+    grievances[id].stats.downvotes++;
+}
+
+$(window).scroll(function () {
+    var topWindow = $(window).scrollTop();
+    var topWindow = topWindow * 1.5;
+    var windowHeight = $(window).height();
+    var position = topWindow / windowHeight;
+    position = 1 - position;
+    $('.arrow-wrap').css('opacity', position);
+});
