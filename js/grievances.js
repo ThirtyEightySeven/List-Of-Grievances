@@ -89,23 +89,22 @@ function sizeWindow() {
     console.log( "ready!" );
 
   var size = $( "li" ).length;
-//   var height;
-//   console.log( size);
+  var height = 0;
+  console.log( size);
 
-// var b;
-// var listItems = $("li");
-// listItems.each(function(idx, li) {
-//   var cheight= $(li).height();
-//   console.log( cheight);
-//     // and the rest of your code
-// });
-
-
-//needs to be worked on
+var b;
+var listItems = $("li");
+    for (var i = 0 ; i < size; i++){
+  var cheight= parseInt($(listItems[i]).css("height"), 10);
+  height = height+ cheight;
+  console.log( cheight);
+};
+console.log( height);
 
 
-  height = 450 * size;
-  height = height/4 +500;
-  $('.wrapper').css("height",height);
+  height = height + size*40;
+  // height = height/4 +500;
+
+  $('.wrapper').css("height",height+2500);
 }
 //some real logic has gotta be here
