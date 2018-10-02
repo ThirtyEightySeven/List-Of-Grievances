@@ -1,4 +1,7 @@
 let grievances;
+let topWindow;
+let windowHeight;
+let position;
 
 // Shuffle using Fisher-Yates algorithm
 function shuffleGrievances() {
@@ -64,10 +67,6 @@ function createContainer() {
     $('#entry').prepend('<div class="cards"><img src="' + grievances[0].image + '"></img><div class="card-bot"><h2 class="card-title">' + grievances[0].title + '</h2><div class="card-separator"></div><p class="card-comments">' + grievances[0].description + '</p><button class="btn btn--block card__btn">Button</button></div></div>');
 }
 
-function auth() {
-
-}
-
 function upvote(id) {
     grievances[id].stats.upvotes++;
 }
@@ -77,10 +76,10 @@ function downvote(id) {
 }
 
 $(window).scroll(function () {
-    var topWindow = $(window).scrollTop();
-    var topWindow = topWindow * 1.5;
-    var windowHeight = $(window).height();
-    var position = topWindow / windowHeight;
+    topWindow = $(window).scrollTop();
+    topWindow = topWindow * 1.5;
+    windowHeight = $(window).height();
+    position = topWindow / windowHeight;
     position = 1 - position;
     $('.arrow-wrap').css('opacity', position);
 });
